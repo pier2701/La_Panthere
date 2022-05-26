@@ -1,3 +1,6 @@
+* {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +29,6 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-
 .bloc {
     width: 100%;
     clear: both;
