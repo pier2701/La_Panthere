@@ -32,6 +32,9 @@ a:hover {
 #contact_display {
     background: #cccccc;  
 }
+.text-center {
+    font-size: 15px;
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
