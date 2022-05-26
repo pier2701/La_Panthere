@@ -20,7 +20,18 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
+#presentation {
+    font-size: 20px;
+    line-height: 22px;
+}
+#article_presse {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 22px;
+}
+#contact_display {
+    background: #cccccc;  
+}
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -304,13 +315,14 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    height: 30px;
     margin: 0 5px 0 0;
-    display: inline;
+    
 }
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+    
 }
 
 .nav-center .navbar-brand img {
@@ -513,7 +525,7 @@ button {
 }
 
 .scrollToTop {
-    width: 40px;
+    width: 120px;
     height: 40px;
     position: fixed;
     bottom: 20px;
