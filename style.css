@@ -32,13 +32,23 @@ a:hover {
     font-size: 20px;
     font-style: italic;
     line-height: 22px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
 }
 #contact_display {
-    background: #ffffff;  
+    background: #ffffff; 
+    font-size: 16px;
+    font-weight: bold;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
 }
 .text-center {
     font-size: 15px;
-    color: #b64815;
+    color: #000000;
 }
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -61,6 +71,7 @@ a:hover {
 #logo {
     margin-left: 40%;
 }
+
 #titre_portfolio {
     margin: auto;
 }
@@ -70,7 +81,14 @@ a:hover {
     color: #ffffff;
     margin: auto;
     margin-bottom: 40px;
-    margin-top: -50px;
+}
+.footer_links {
+    margin-top: 40px;
+    margin-left: 15%;
+}
+#mail {
+    color: #4e0b0b;
+    font-weight: bold;
 }
 .bloc {
     width: 100%;
@@ -485,6 +503,9 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
 }
 
 .mg-lg {
@@ -558,12 +579,13 @@ button {
 }
 
 .scrollToTop {
-    width: 120px;
+    width: 130px;
     height: 40px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
+    color: #313131;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -592,11 +614,12 @@ a[data-lightbox]:hover::before {
     margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
-    color: #FFF;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 47%;
+    left: 54%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -614,8 +637,9 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog {
     width: 90%;
-    max-width: 900px;
+    width: 300px;
     margin: 0 auto 0;
+    margin-top: 200px;
 }
 
 #lightbox-modal .modal-dialog img {
@@ -1084,5 +1108,10 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    #logo {
+        margin-left: 33%;
     }
 }

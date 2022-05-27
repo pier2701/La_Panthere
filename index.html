@@ -10,14 +10,14 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet"  type="text/css" href="./css/font-awesome.css" async>
+	<link rel="stylesheet"  type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.js"
-		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
 
-	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/jquery.touchSwipe.min.js" defer></script>
-	<script src="./js/gmaps.min.js" async></script>
+	<script src="./js/gmaps.min.js" defer></script>
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
 
@@ -221,9 +221,9 @@
 					<h2 id="titre_contact">
 						Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 					</h2>
-					<div id="contact_display" class="col-sm-12 text-center">
-						<p class="text-center">
-							contact@agencelapanthere.com<br>2 place Sathonay<br> 69001 Lyon<br>Ouvert de 9h à 18h, du
+					<div class="col-sm-12">
+						<p id="contact_display">
+							<a id="mail" href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a><br>2 place Sathonay<br> 69001 Lyon<br>Ouvert de 9h à 18h, du
 							lundi au vendredi<br>
 						</p>
 					</div>
@@ -295,7 +295,7 @@
 		<!-- bloc-7 END -->
 
 		<!-- ScrollToTop Button -->
-		<a href="#bloc-1-hero" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+		<a href="#image_logo" class=" scrollToTop bloc-button btn btn-d" onclick="scrollToTarget('1')"><span
 				class="fa fa-chevron-up"> haut de page</span></a>
 		<!-- ScrollToTop Button END-->
 		<!-- Footer - bloc-8 END -->
@@ -330,7 +330,7 @@
 								</div>
 							</div>
 						<div class="row">
-							<div class="col-sm-4">
+							<div class="footer_links">
 								Partenaires
 								<ul>
 									<li><a href="voiture.com">Identité visuelle.com</a></li>
@@ -345,8 +345,7 @@
 			</div>
 		</div>
 		<!-- Footer - bloc-8 END -->
-
-	</div>
+	
 	<!-- Principal conteneur END -->
 
 
