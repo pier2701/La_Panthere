@@ -20,6 +20,10 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+#titre {
+    color: black;
+    font-weight: bold;
+}
 #presentation {
     font-size: 20px;
     line-height: 22px;
@@ -30,10 +34,11 @@ a:hover {
     line-height: 22px;
 }
 #contact_display {
-    background: #cccccc;  
+    background: #ffffff;  
 }
 .text-center {
     font-size: 15px;
+    color: #b64815;
 }
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -42,6 +47,30 @@ a:hover {
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+}
+#image_logo {
+    height: 100px;
+    width: 60%;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+    left: 18.5%;
+    margin-bottom: 40px;
+}
+#logo {
+    margin-left: 40%;
+}
+#titre_portfolio {
+    margin: auto;
+}
+#titre_contact {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: -50px;
 }
 .bloc {
     width: 100%;
@@ -120,7 +149,7 @@ a:hover {
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: #ffffff;
 }
 
 .d-bloc .icon-round,
@@ -128,7 +157,7 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+    border-color: #ffffff;
 }
 
 .d-bloc .divider-h span {
@@ -149,7 +178,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: white;
 }
 
 .d-bloc .a-btn:hover,
@@ -377,6 +406,7 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+    
 }
 
 @media (min-width: 768px) {
@@ -493,7 +523,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 25px!important;
 }
 
 .icon-lg {
@@ -627,7 +657,7 @@ a[data-lightbox]:hover img {
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9);
+    color: #ffffff;
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
     position: absolute;
@@ -664,13 +694,16 @@ h5,
 h6,
 p,
 label,
-.btn,
+.btn {
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #313131;
+}
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #ffffff;
 }
-
 .container {
     max-width: 1000px;
 }
@@ -720,7 +753,6 @@ p {
     max-width: 800px;
     margin: auto auto auto auto;
 }
-
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -782,21 +814,21 @@ h4 {
 .bgc-white {
     background-color: #FFFFFF;
 }
-
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
+
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #b64815;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffeae0!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #b64815;
     color: #FFFFFF!important;
 }
 
@@ -814,7 +846,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #b64815!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -835,11 +867,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -978,10 +1010,7 @@ h4 {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;

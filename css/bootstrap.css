@@ -159,7 +159,7 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
+  color: #e0e0e0;
   text-decoration: underline;
 }
 
@@ -939,9 +939,7 @@ pre code {
     max-width: 25%;
   }
   .col-sm-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+  width: 100%;
   }
   .col-sm-5 {
     -ms-flex: 0 0 41.666667%;
