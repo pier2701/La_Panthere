@@ -81,9 +81,10 @@ a:hover {
 #titre_contact {
     font-weight: bold;
     text-align: center;
-    color: #FFFF;
+    padding: 20px;
     margin: auto;
     margin-bottom: 40px;
+    border-radius: 15px;
 }
 .footer_title {
     margin-top: 40px;
@@ -587,9 +588,6 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-}
-#nav_fixed {
-    background-color: red;
 }
 .scrollToTop {
     width: 80px;
