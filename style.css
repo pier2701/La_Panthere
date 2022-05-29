@@ -97,6 +97,11 @@ a:hover {
 #mail {
     color: #4e0b0b;
     font-weight: bold;
+    
+    border-bottom: #4e0b0b solid 1px;
+}
+#mail:hover {
+    font-style: italic;
 }
 .bloc {
     width: 100%;
@@ -531,7 +536,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(247, 129, 38, 0.599);
 }
 
 button {
@@ -583,19 +588,42 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
-
+#nav_fixed {
+    background-color: red;
+}
 .scrollToTop {
-    width: 130px;
+    width: 80px;
     height: 40px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 4%;
+    right: 4%;
     opacity: 1;
     color: #313131;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
-
+.scrollToTop2 {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    opacity: 1;
+    color: #313131;
+    z-index: 500;
+    transition: all .3s ease-in-out;
+}
+.scrollToTop3 {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    top: 10%;
+    right: 4%;
+    opacity: 1;
+    color: #313131;
+    z-index: 500;
+    transition: all .3s ease-in-out;
+}
 .scrollToTop span {
     margin-top: 6px;
 }
@@ -821,6 +849,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    border: #000000 solid 3px;
 }
 
 .portfolio-row {
@@ -861,11 +890,14 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #000000!important;
+    border: #984c29 solid 2px;
 }
 
 .btn-atomic-tangerine:hover {
     background: #F3976C!important;
     color: #000000!important;
+    box-shadow: #8e5e47 6px 6px 10px;
+    transition: 0.3s;
 }
 
 .ltc-white {
@@ -1115,6 +1147,22 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    #image_logo {
+        margin-top: 20%;
+        margin-left: 1%;
+    }
+    .scrollToTop {
+        bottom: 4%;
+        right: 6%;
+    }
+    .scrollToTop2 {
+        top: 4%;
+        right: 26%;
+    }
+    .scrollToTop3 {
+        top: 4%;
+        right: 6%;
     }
 }
 @media (max-width: 425px) {

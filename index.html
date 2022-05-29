@@ -17,7 +17,7 @@
 	<script src="./js/bootstrap.min.js" defer></script>
 	<script src="./js/blocs.min.js"defer></script>
 	<script src="./js/jquery.touchSwipe.min.js" defer></script>
-	<script src="./js/gmaps.min.js" defer></script>
+	
 	<script src="./js/jqBootstrapValidation.min.js" defer></script>
 	<script src="./js/formHandler.min.js" defer></script>
 
@@ -30,11 +30,9 @@
 </head>
 
 <body>
-	<!-- Principal conteneur -->
-	<div class="page-container">
 
-<!-- bloc-1-presentation -->
-		<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
+		<!-- bloc-1-presentation -->
+<header class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
 			id="bloc-1-hero">
 			<div class="container bloc-lg">
 				<div class="row tight-width-whitespace">
@@ -53,8 +51,19 @@
 					</div>
 				</div>
 			</div>
-		</div>
+</header>
 		<!-- bloc-1-presentation END -->
+		
+		<!-- Scroll Nav Button -->
+<nav id="nav_fixed">
+	<a href="#bloc-1-hero" class=" scrollToTop bloc-button btn btn-d"><span
+		>Accueil</span></a>
+	<a href="#titre_portfolio" class=" scrollToTop2 bloc-button btn btn-d"><span
+				>Portfolio</span></a>	
+	<a href="#bloc-6" class=" scrollToTop3  btn btn-d"><span
+		>Contact</span></a>
+	</nav>					
+		<!-- Scroll Nav Button END-->
 
 		<!-- bloc-2-services -->
 		<div class="bloc bgc-white l-bloc" id="bloc-2-services">
@@ -135,7 +144,7 @@
 							aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous
 							ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à
 							nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés,
-							qui seront facilement trouvable sur les moteurs de recherche. <br><br><a class="ltc-white bold-link" href="#bloc-7">Contactez notre équipe</a><br>
+							qui seront facilement trouvable sur les moteurs de recherche. <br>
 							</p>
 					</div>
 				</div>
@@ -159,9 +168,9 @@
 							data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img
 								src="img/livres.jpg" alt="logo la panthère et refonte site web journal"
 								class="img-responsive portfolio-thumb" width="270" height="270" /></a>
-						<h2 class="mg-md text-center">
+						<h3 class="mg-md text-center">
 							Refonte d'un site web pour un journal local
-						</h2>
+						</h3>
 						<p class="text-center">
 							Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
 						</p>
@@ -171,9 +180,9 @@
 							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/photographe.jpg" class="img-responsive portfolio-thumb"
 								alt="logo la panthère, Création d'un site web pour photographes" width="270"
 								height="270" /></a>
-						<h2 class="mg-md text-center">
+						<h3 class="mg-md text-center">
 							Création d'un site web pour photographes
-						</h2>
+						</h3>
 						<p class="text-center">
 							Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
 						</p>
@@ -186,9 +195,9 @@
 								src="img/accessoires_appareil_photo.jpg" class="img-responsive portfolio-thumb"
 								alt="logo la panthère, Création d'un site web pour voyageur" width="270"
 								height="270" /></a>
-						<h2 class="mg-md text-center">
+						<h3 class="mg-md text-center">
 							Création d'un site internet pour un voyageur
-						</h2>
+						</h3>
 						<p class="text-center">
 							Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les
 							articles de ce voyageur.
@@ -200,9 +209,9 @@
 							<img src="img/coworking.webp" class="img-responsive portfolio-thumb"
 								alt="logo la panthère, Création d'un site web pour agence de mariage" width="270"
 								height="270" /></a>
-						<h2 class="mg-md text-center">
+						<h3 class="mg-md text-center">
 							Conception d'un site pour une agence de mariage
-						</h2>
+						</h3>
 						<p class="text-center">
 							Nous avons travaillé avec cette agence pour créer un site internet permettant la
 							présentation détaillée de leurs prestations.
@@ -258,15 +267,15 @@
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
 								<label for="name">
-									Nom
+									Nom, Prénom
 								</label>
-								<input id="name" class="form-control" required />
+								<input id="name" placeholder="votre nom, votre prénom" class="form-control" required />
 							</div>
 							<div class="form-group">
 								<label for="email">
 									Adresse email
 								</label>
-								<input id="email" class="form-control" type="email" required />
+								<input id="email" placeholder="exemple@gmail.com" class="form-control" type="email" required />
 							</div>
 							<div class="form-group">
 								<label for="message1">
@@ -293,10 +302,6 @@
 		</div>
 		<!-- bloc-7 END -->
 
-		<!-- ScrollToTop Button -->
-		<a href="#bloc-1-hero" class=" scrollToTop bloc-button btn btn-d" onclick="scrollToTarget('1')"><span
-				class="fa fa-chevron-up"> haut de page</span></a>
-		<!-- ScrollToTop Button END-->
 		<!-- Footer - bloc-8 END -->
 		<!-- Footer - bloc-8 -->
 		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -332,18 +337,19 @@
 							<div class="footer_title">
 								Partenaires
 								<ul>
-									<li><a class="footer_links" href="voiture.com">Identité visuelle.com</a></li>
-									<li><a class="footer_links" href="pizza.com">Web marketing.com</a></li>
-									<li><a class="footer_links" href="matoiture.com">Site internet.com</a></li>
-									<li><a class="footer_links" href="immobilierseo.com">Entreprises.com</a></li>
+									<li><a class="footer_links" href="Identité visuelle.com">Identité visuelle.com</a></li>
+									<li><a class="footer_links" href="Web marketing.com">Web marketing.com</a></li>
+									<li><a class="footer_links" href="Site internet.com">Site internet.com</a></li>
+									<li><a class="footer_links" href="Entreprises.com">Entreprises.com</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
-		<!-- Footer - bloc-8 END -->
+			<!-- Footer - bloc-8 END -->
 	
 	<!-- Principal conteneur END -->
 
