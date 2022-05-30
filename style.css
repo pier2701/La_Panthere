@@ -538,6 +538,7 @@ nav .caret {
 .btn-d:focus {
     color: #FFF;
     background: rgba(247, 129, 38, 0.599);
+    border: rgba(122, 62, 17, 0.769) solid 2px;
 }
 
 button {
