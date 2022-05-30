@@ -104,6 +104,9 @@ a:hover {
 #mail:hover {
     font-style: italic;
 }
+.cover {
+    object-fit: fill;
+}
 .bloc {
     width: 100%;
     clear: both;
@@ -558,6 +561,7 @@ button {
 
 .icon-md {
     font-size: 25px!important;
+    color: #000000;
 }
 
 .icon-lg {
