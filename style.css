@@ -86,6 +86,9 @@ a:hover {
     margin-bottom: 40px;
     border-radius: 15px;
 }
+#obligatoire {
+    font-size: 16px;
+}
 .footer_title {
     margin-top: 40px;
     margin-left: 15%;
