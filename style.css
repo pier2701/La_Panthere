@@ -40,6 +40,12 @@ a:hover {
     text-align: center;
     margin: auto;
 }
+#author_article {
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 5px;
+    opacity: 0.6;
+}
 #contact_display {
     background: #ffffff; 
     font-size: 16px;
